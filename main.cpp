@@ -39,20 +39,18 @@ int menuUno(){
     int num1;
     int num2;
     
-    
-
-    
     cout << BOLDYELLOW << "Entrez le numérateur: "; //get user input
     cin >> num1;
     cout << "Entrez le dénominateur: ";
     cin >> num2;
     
+    int reponse = calculerPGCD(<#int a#>, <#int b#>);
+    
     std::string solutionPGCD = "Le Plus Grand Diviseur Commun de " + //print out pgcd
     std::to_string(num1) + " et " +
     std::to_string(num2) + " est " +
-    std::to_string(pgcd(abs(num1)), abs(num2))) << endl;
+    std::to_string(reponse);
     
-    std::cout << solutionPGCD;
 }
 
 int calculerPGCD(int a, int b) {
@@ -104,7 +102,7 @@ int main() {
     switch(choix) {
         case 1:
             int solutionPGCD = 0;
-            solutionPGCD = menuUno(solutionPGCD);
+            solutionPGCD = menuUno();
             std::cout << solutionPGCD;
             break;
         case 2:
